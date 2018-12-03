@@ -41,10 +41,10 @@ def googledrive():
             folder.name = x[1]
             folder.kind = 'PLAN'
             folder.project_id = '54fba2df-ad0e-446f-902e-0ce86fab6aca'
-            folder.created_at = timestamp_now
-            folder.updated_at = timestamp_now
-            folder.device_created_at = timestamp_now
-            folder.device_updated_at = timestamp_now
+            folder.created_at = 1540643993592
+            folder.updated_at = 1540643993592
+            folder.device_created_at = 1540643993592
+            folder.device_updated_at = 1540643993592
             db_session.add(folder)
             db_session.commit()
     for x in folderattachment:
@@ -56,10 +56,10 @@ def googledrive():
             folder.name = x[1]
             folder.kind = 'ATTACHMENT'
             folder.project_id = '54fba2df-ad0e-446f-902e-0ce86fab6aca'
-            folder.created_at = timestamp_now
-            folder.updated_at = timestamp_now
-            folder.device_created_at = timestamp_now
-            folder.device_updated_at = timestamp_now
+            folder.created_at = 1540643993592
+            folder.updated_at = 1540643993592
+            folder.device_created_at = 1540643993592
+            folder.device_updated_at = 1540643993592
             db_session.add(folder)
             db_session.commit()
     for x in filesattachment:
@@ -75,10 +75,10 @@ def googledrive():
             attachement.project_id = '54fba2df-ad0e-446f-902e-0ce86fab6aca'
             attachement.creator_user_id = ''
             attachement.folder_id = x['parents'][0]['id']
-            attachement.created_at = timestamp_now
-            attachement.updated_at = timestamp_now
-            attachement.device_created_at = timestamp_now
-            attachement.device_updated_at = timestamp_now
+            attachement.created_at = 1540643993592
+            attachement.updated_at = 1540643993592
+            attachement.device_created_at = 1540643993592
+            attachement.device_updated_at = 1540643993592
             db_session.add(attachement)
             db_session.commit()
     for x in filesfloorplan:
@@ -92,9 +92,9 @@ def googledrive():
             floorplan.project_id = '54fba2df-ad0e-446f-902e-0ce86fab6aca'
             floorplan.folder_id = x['parents'][0]['id']
             floorplan.is_name_confirmed = 1
-            floorplan.created_at = timestamp_now
-            floorplan.updated_at = timestamp_now
-            floorplan.device_updated_at = timestamp_now
+            floorplan.created_at = 1540643993592
+            floorplan.updated_at = 1540643993592
+            floorplan.device_updated_at = 1540643993592
             db_session.add(floorplan)
             db_session.commit()
         qry = db_session.query(Sheets).filter(Sheets.id==x['id'])
@@ -120,9 +120,9 @@ def googledrive():
             sheet.tiles_package_url = ''
             sheet.project_id = '54fba2df-ad0e-446f-902e-0ce86fab6aca'
             sheet.floorplan_id = x['id']
-            sheet.created_at = timestamp_now
-            sheet.updated_at = timestamp_now
-            sheet.device_updated_at = timestamp_now
+            sheet.created_at = 1540643993592
+            sheet.updated_at = 1540643993592
+            sheet.device_updated_at = 1540643993592
             db_session.add(sheet)
             db_session.commit()
     return json.dumps(f)
