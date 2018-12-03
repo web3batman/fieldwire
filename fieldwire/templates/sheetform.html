@@ -1,0 +1,32 @@
+<doctype html>
+<title>Sheet</title>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.id) }}
+        {{ render_field(form.name) }}
+        {{ render_field(form.version) }}
+        {{ render_field(form.description) }}
+        {{ render_field(form.notes) }}
+        {{ render_field(form.has_conflicts) }}
+        {{ render_field(form.has_errors) }}
+        {{ render_field(form.thumb_url) }}
+        {{ render_field(form.full_file_url) }}
+        {{ render_field(form.file_width) }}
+        {{ render_field(form.file_height) }}
+        {{ render_field(form.original_width) }}
+        {{ render_field(form.original_height) }}
+        {{ render_field(form.meters_per_pixel) }}
+        {{ render_field(form.tile_size) }} 
+        {{ render_field(form.tiles_base_url) }}
+        {{ render_field(form.tiles_package_url) }}
+        {{ render_field(form.project_id) }}
+        {{ render_field(form.floorplan_id) }}
+        {{ render_field(form.created_at) }}
+        {{ render_field(form.updated_at) }}
+        {{ render_field(form.device_updated_at) }}
+        {{ render_field(form.deleted_at) }}
+    </dl>
+    <p><input type=submit value=Submit>
+</form>

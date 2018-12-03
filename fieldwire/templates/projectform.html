@@ -1,0 +1,32 @@
+<doctype html>
+<title>Project</title>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.id) }}
+        {{ render_field(form.name) }}
+        {{ render_field(form.address) }}
+        {{ render_field(form.currency) }}
+        {{ render_field(form.time_zone_name) }}
+        {{ render_field(form.plan_name) }}
+        {{ render_field(form.man_power_unit) }}
+        {{ render_field(form.measurement_unit) }}
+        {{ render_field(form.is_premium) }}
+        {{ render_field(form.is_forms_enabled) }}
+        {{ render_field(form.is_email_notifications_enabled) }}
+        {{ render_field(form.is_analytics_enabled) }}
+        {{ render_field(form.should_prompt_effort_on_complete) }}
+        {{ render_field(form.max_fresh_sheets_count) }}
+        {{ render_field(form.min_verified_at_days) }}
+        {{ render_field(form.created_at) }}
+        {{ render_field(form.updated_at) }}
+        {{ render_field(form.device_created_at) }}
+        {{ render_field(form.device_updated_at) }}
+        {{ render_field(form.archived_at) }}
+        {{ render_field(form.blocked_at) }}
+        {{ render_field(form.deleted_at) }}
+
+    </dl>
+    <p><input type=submit value=Submit>
+</form>

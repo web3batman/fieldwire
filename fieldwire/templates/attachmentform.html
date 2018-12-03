@@ -1,0 +1,22 @@
+<doctype html>
+<title>Attachment</title>
+
+{% from "_formhelpers.html" import render_field %}
+<form method=post>
+    <dl>
+        {{ render_field(form.id) }}
+        {{ render_field(form.name) }}
+        {{ render_field(form.thumb_url) }}
+        {{ render_field(form.full_file_url) }}
+        {{ render_field(form.project_id) }}
+        {{ render_field(form.kind) }}
+        {{ render_field(form.folder_id) }}
+        {{ render_field(form.creator_user_id) }}
+        {{ render_field(form.created_at) }}
+        {{ render_field(form.updated_at) }}
+        {{ render_field(form.device_created_at) }}
+        {{ render_field(form.device_updated_at) }}
+        {{ render_field(form.deleted_at) }}
+    </dl>
+    <p><input type=submit value=Submit>
+</form>
