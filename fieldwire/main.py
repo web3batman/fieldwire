@@ -40,7 +40,7 @@ def googledrive():
             folder.id = x[0]
             folder.name = x[1]
             folder.kind = 'PLAN'
-            folder.project_id = 'f3e241b4-adea-496f-bac7-f3c8f19670cb'
+            folder.project_id = '54fba2df-ad0e-446f-902e-0ce86fab6aca'
             folder.created_at = timestamp_now
             folder.updated_at = timestamp_now
             folder.device_created_at = timestamp_now
@@ -55,7 +55,7 @@ def googledrive():
             folder.id = x[0]
             folder.name = x[1]
             folder.kind = 'ATTACHMENT'
-            folder.project_id = 'f3e241b4-adea-496f-bac7-f3c8f19670cb'
+            folder.project_id = '54fba2df-ad0e-446f-902e-0ce86fab6aca'
             folder.created_at = timestamp_now
             folder.updated_at = timestamp_now
             folder.device_created_at = timestamp_now
@@ -72,7 +72,7 @@ def googledrive():
             attachement.thumb_url = x['thumbnailLink']
             attachement.full_file_url = x['alternateLink']
             attachement.kind = 'FILE'
-            attachement.project_id = 'f3e241b4-adea-496f-bac7-f3c8f19670cb'
+            attachement.project_id = '54fba2df-ad0e-446f-902e-0ce86fab6aca'
             attachement.creator_user_id = ''
             attachement.folder_id = x['parents'][0]['id']
             attachement.created_at = timestamp_now
@@ -89,7 +89,7 @@ def googledrive():
             floorplan.id = x['id']
             floorplan.name = x['title']
             floorplan.description = ''
-            floorplan.project_id = 'f3e241b4-adea-496f-bac7-f3c8f19670cb'
+            floorplan.project_id = '54fba2df-ad0e-446f-902e-0ce86fab6aca'
             floorplan.folder_id = x['parents'][0]['id']
             floorplan.is_name_confirmed = 1
             floorplan.created_at = timestamp_now
@@ -118,7 +118,7 @@ def googledrive():
             sheet.tile_size = 513
             sheet.tiles_base_url = ''
             sheet.tiles_package_url = ''
-            sheet.project_id = 'f3e241b4-adea-496f-bac7-f3c8f19670cb'
+            sheet.project_id = '54fba2df-ad0e-446f-902e-0ce86fab6aca'
             sheet.floorplan_id = x['id']
             sheet.created_at = timestamp_now
             sheet.updated_at = timestamp_now
